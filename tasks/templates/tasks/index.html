@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Информация по тэгам{% endblock %}
+
+{% block main_content %}
+  <h1>Тэги и чиселки</h1>
+  <ul>
+  {% for tag, count in counts.items %}
+    <li>
+      <span class="badge badge-info">{{ tag }}: {{ count }}</span>
+    </li>
+  {% endfor %}
+  </ul>
+{% endblock %}
