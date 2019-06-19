@@ -169,3 +169,11 @@ def tasks_by_tag(request, tag_slug=None):
         "tasks/list.html",
         {"tag": tag, "tasks": tasks, "all_tags": all_tags},
     )
+
+@login_required
+def index(request):
+    import random
+
+    counts = {t.name: random.randint(1, 100) for t in Tag.objects.all()}
+
+    return render(request, "tasks/index.html", {"counts": counts})
