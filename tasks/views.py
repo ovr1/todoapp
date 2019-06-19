@@ -13,17 +13,19 @@ from django.views.generic.detail import DetailView
 from tasks.forms import AddTaskForm, TodoItemExportForm, TodoItemForm
 from tasks.models import TodoItem
 from taggit.models import Tag
+from django.db.models import Count
 
 
 @login_required
 def index(request):
+    counts = Tag.objects.annotate(
+        total_tasks=Count('todoitem')
+    ).order_by("-total_tasks")
+
     counts = {
-        t.name: t.taggit_taggeditem_items.count()
-        for t in Tag.objects.all()
+        c.name: c.total_tasks
+        for c in counts
     }
-
-    return render(request, "tasks/index.html", {"counts": counts})
-
 
 def complete_task(request, uid):
     t = TodoItem.objects.get(id=uid)
