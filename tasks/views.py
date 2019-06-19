@@ -17,7 +17,12 @@ from taggit.models import Tag
 
 @login_required
 def index(request):
-    return HttpResponse("Примитивный ответ из приложения tasks")
+    counts = {
+        t.name: t.taggit_taggeditem_items.count()
+        for t in Tag.objects.all()
+    }
+
+    return render(request, "tasks/index.html", {"counts": counts})
 
 
 def complete_task(request, uid):
@@ -170,10 +175,3 @@ def tasks_by_tag(request, tag_slug=None):
         {"tag": tag, "tasks": tasks, "all_tags": all_tags},
     )
 
-@login_required
-def index(request):
-    import random
-
-    counts = {t.name: random.randint(1, 100) for t in Tag.objects.all()}
-
-    return render(request, "tasks/index.html", {"counts": counts})
