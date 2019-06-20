@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.mail import send_mail
-from django.db.models import Q
+from django.db.models import Q,Count
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import redirect, render, get_object_or_404
 from django.urls import reverse, reverse_lazy
@@ -13,7 +13,6 @@ from django.views.generic.detail import DetailView
 from tasks.forms import AddTaskForm, TodoItemExportForm, TodoItemForm
 from tasks.models import TodoItem
 from taggit.models import Tag
-from django.db.models import Count
 
 
 @login_required
@@ -26,6 +25,9 @@ def index(request):
         c.name: c.total_tasks
         for c in counts
     }
+
+    return render(request, "tasks/index.html", {"counts": counts})
+
 
 def complete_task(request, uid):
     t = TodoItem.objects.get(id=uid)
