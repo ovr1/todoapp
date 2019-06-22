@@ -15,6 +15,8 @@ from tasks.models import TodoItem
 from taggit.models import Tag
 
 
+
+
 @login_required
 def index(request):
     counts = Tag.objects.annotate(
@@ -28,6 +30,13 @@ def index(request):
 
     return render(request, "tasks/index.html", {"counts": counts})
 
+@login_required
+def priority(request):
+    import random
+
+    counts = {p.choices: random.randint(1, 100) for p in TodoItem.priority.all()}
+
+    return render(request, "tasks/index.html", {"counts": counts})
 
 def complete_task(request, uid):
     t = TodoItem.objects.get(id=uid)

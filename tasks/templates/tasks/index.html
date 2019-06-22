@@ -12,4 +12,13 @@
     </li>
   {% endfor %}
   </ul>
+  <h2>Приоритеты</h2>
+  <ul>
+  {% for priority, count in counts.items %}
+    <li>
+      <span class="badge badge-info">{{ PRIORITY_CHOICES }}: {{ count }}</span>
+    </li>
+  {% endfor %}
+  </ul>
+
 {% endblock %}
