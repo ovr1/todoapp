@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="134680b8-7f88-4f51-a0e6-b9637e9762ef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/todoapp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/todoapp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="134680b8-7f88-4f51-a0e6-b9637e9762ef" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,8 +55,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/runtime.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state>
+              <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -114,6 +110,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -154,7 +151,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -229,6 +225,7 @@
       <workItem from="1561113374986" duration="17743000" />
       <workItem from="1561216200248" duration="4955000" />
       <workItem from="1561270932261" duration="1601000" />
+      <workItem from="1561292347065" duration="245000" />
     </task>
     <task id="LOCAL-00001" summary="Finish">
       <created>1560968388252</created>
@@ -304,7 +301,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38092000" />
+    <option name="totallyTimeSpent" value="38337000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -319,7 +316,7 @@
     <frame x="-15" y="14" width="931" height="1020" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27210104" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27784157" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -417,9 +414,7 @@
     <entry file="das://cf9047ad-6b92-4cc3-a43d-76a46d331a78/schema/main/table/auth_user_user_permissions" />
     <entry file="das://cf9047ad-6b92-4cc3-a43d-76a46d331a78/schema/main/table/django_admin_log" />
     <entry file="das://cf9047ad-6b92-4cc3-a43d-76a46d331a78/schema/main/table/django_content_type" />
-    <entry file="file://$PROJECT_DIR$/../WPI_BELOFF_Log.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../WPI_BELOFF_Log.txt" />
     <entry file="das://cf9047ad-6b92-4cc3-a43d-76a46d331a78/schema/main/table/tasks_todoitem" />
     <entry file="file://$PROJECT_DIR$/tasks/forms.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -493,8 +488,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/runtime.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state>
+          <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
         </state>
       </provider>
     </entry>
