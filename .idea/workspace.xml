@@ -72,7 +72,11 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" selection-end-line="5" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -102,6 +106,7 @@
         <option value="$PROJECT_DIR$/tasks/views.py" />
         <option value="$PROJECT_DIR$/runtime.txt" />
         <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -232,7 +237,7 @@
       <workItem from="1561216200248" duration="4955000" />
       <workItem from="1561270932261" duration="1601000" />
       <workItem from="1561292347065" duration="974000" />
-      <workItem from="1561293549537" duration="2342000" />
+      <workItem from="1561293549537" duration="2677000" />
     </task>
     <task id="LOCAL-00001" summary="Finish">
       <created>1560968388252</created>
@@ -318,11 +323,18 @@
       <option name="project" value="LOCAL" />
       <updated>1561295485212</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Finish">
+      <created>1561314943493</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1561314943546</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41408000" />
+    <option name="totallyTimeSpent" value="41743000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -335,9 +347,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="998" y="12" width="931" height="1020" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2847302" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2847302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -512,7 +523,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-end-line="5" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
