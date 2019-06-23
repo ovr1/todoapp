@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="134680b8-7f88-4f51-a0e6-b9637e9762ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,8 +103,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-15" />
-    <option name="y" value="14" />
+    <option name="x" value="998" />
+    <option name="y" value="12" />
     <option name="width" value="931" />
     <option name="height" value="1020" />
   </component>
@@ -230,7 +229,7 @@
       <workItem from="1561216200248" duration="4955000" />
       <workItem from="1561270932261" duration="1601000" />
       <workItem from="1561292347065" duration="974000" />
-      <workItem from="1561293549537" duration="1202000" />
+      <workItem from="1561293549537" duration="1827000" />
     </task>
     <task id="LOCAL-00001" summary="Finish">
       <created>1560968388252</created>
@@ -309,11 +308,18 @@
       <option name="project" value="LOCAL" />
       <updated>1561292794367</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Finish">
+      <created>1561295485212</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1561295485212</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40268000" />
+    <option name="totallyTimeSpent" value="40893000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -325,7 +331,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-15" y="14" width="931" height="1020" extended-state="0" />
+    <frame x="-15" y="14" width="931" height="1020" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2847302" />
