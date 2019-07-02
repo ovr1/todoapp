@@ -14,9 +14,9 @@
   </ul>
   <h2>Приоритеты</h2>
   <ul>
-  {% for priority, count in counts.items %}
+  {% for priority_DESK, cp in cps.items %}
     <li>
-      <span class="badge badge-info">{{ PRIORITY_CHOICES }}: {{ count }}</span>
+      <span class="badge badge-info">{{ priority_DESK }}: {{ count }}</span>
     </li>
   {% endfor %}
   </ul>

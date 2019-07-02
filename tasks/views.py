@@ -31,12 +31,16 @@ def index(request):
     return render(request, "tasks/index.html", {"counts": counts})
 
 @login_required
-def priority(request):
-    import random
+def index2(request):
+    cps = TodoItemForm.objects.priority(
+        priority_DESK=Count('priority')
+    ).order_by("priority_DESK")
 
-    counts = {p.choices: random.randint(1, 100) for p in TodoItem.priority.all()}
-
-    return render(request, "tasks/index.html", {"counts": counts})
+    cps = {
+        c.name: c.priority_DESK
+        for c in cps
+    }
+    return render(request, "tasks/index.html", {"cps": cps})
 
 def complete_task(request, uid):
     t = TodoItem.objects.get(id=uid)
