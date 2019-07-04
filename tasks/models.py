@@ -25,7 +25,7 @@ class TodoItem(models.Model):
     priority = models.IntegerField(
         "Приоритет", choices=PRIORITY_CHOICES, default=PRIORITY_MEDIUM
     )
-    tags = TaggableManager()
+    tags = TaggableManager(through=RuTaggedItem)
 
     def __str__(self):
         return self.description.lower()
