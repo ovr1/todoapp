@@ -4,6 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.mail import send_mail
 from django.db.models import Q,Count
+from django.db import migrations
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import redirect, render, get_object_or_404
 from django.urls import reverse, reverse_lazy
@@ -191,4 +192,17 @@ def tasks_by_tag(request, tag_slug=None):
         "tasks/list.html",
         {"tag": tag, "tasks": tasks, "all_tags": all_tags},
     )
+def forwards(apps, schema_editor):
+    # Your migration code goes here
+    ...
+
+class Migration(migrations.Migration):
+
+    dependencies = [
+        ('taggit', '0004_auto_20190619_0937'),
+    ]
+
+    operations = [
+        migrations.RunPython(forwards, hints={'target_db': 'default'}),
+    ]
 
