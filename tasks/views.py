@@ -195,7 +195,6 @@ def tasks_by_tag(request, tag_slug=None):
 def forwards(apps, schema_editor):
     # Your migration code goes here
     ...
-
 class Migration(migrations.Migration):
 
     dependencies = [
